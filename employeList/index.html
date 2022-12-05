@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <form id="personalDetailsForm">
+            <input type="hidden" name="personId" value="" />
+            <fieldset>
+                <legend>Personal Details</legend>
+                <div class="form-control">
+                    <label>
+                        Salutation
+                        <br />
+                        <select name="salutation">
+                            <option></option>
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                            <option>Mrs.</option>
+                            <option>Dr.</option>
+                            <option>Prof.</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-control">
+                    <label>First name: <input name="firstName" /></label>
+                </div>
+                <div class="form-control">
+                    <label>Last name: <input name="lastName" /></label>
+                </div>
+                <div class="form-control">
+                    Gender :
+                    <label><input type="radio" name="gender" value="gender_001" />Male</label>
+                    <label><input type="radio" name="gender" value="gender_002" />Female</label>
+                    <label><input type="radio" name="gender" value="gender_003" />Other</label>
+                </div>
+                <div class="form-control">
+                    <label>Email:<input type="email" name="email" /></label>
+                </div>
+                <div class="form-control">
+                    <label>Date of Birth:<input type="date" name="birthDate"></label>
+                </div>
+                <div class="form-control">
+                    <label>
+                        Address :
+                        <br />
+                        <textarea name="address" cols="30" rows="3"></textarea>
+                    </label>
+                </div>
+                <div id="checkbox">
+                    Choose your hobbies
+                </div>
+                <div class="form-control">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </fieldset>
+            <h2>Personal Details</h2>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

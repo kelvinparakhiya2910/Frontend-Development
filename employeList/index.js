@@ -162,12 +162,29 @@
         },
         Adit: function (id) {
             const parsanIndex = FormConstants.getIndex(id);
-            const name = personalDetailsForm.getElementsByTagName('input');
+            const name = document.getElementById('personalDetailsForm');
             const details = FormConstants.personalDetails[parsanIndex];
-            // let a = FormData.set(firstName, details[firstName]);
-            console.log(details[firstName]);
+
+            FormConstants.initForm(name, 'personId', details.personId);
+            console.log(details.personId);
+            FormConstants.initForm(name, 'firstName', details.firstName);
+            console.log(details.firstName);
+            // FormConstants.initForm(name, 'lastName', details.lastName);
+            // console.log(details.lastName);
+
+
+            // FormConstants.initForm(name, 'gender', details.gender); 
+            FormConstants.initForm(name, 'email', details.email);
+            // FormConstants.initForm(name, 'date', details.birthDate);
+            // FormConstants.initForm(name, 'address', details.address);
+            // FormConstants.initForm(name, 'address', details.hobbies);
 
         },
+        initForm: function (oForm, elementName, initTxt) {
+            frmElement = oForm.elements[elementName];
+            frmElement.value = initTxt;
+        },
+
         hobbieActions: function (id, action) {
 
         },

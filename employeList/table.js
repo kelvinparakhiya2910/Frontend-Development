@@ -1,5 +1,31 @@
 (function () {
     const FormConstants = Object.freeze({
+        salutation: [
+            {
+                id: 'salutation_001',
+                value: "",
+            },
+            {
+                id: 'salutation_002',
+                value: "Mr.",
+            },
+            {
+                id: 'salutation_003',
+                value: "Ms.",
+            },
+            {
+                id: 'salutation_004',
+                value: "Mrs.",
+            },
+            {
+                id: 'salutation_005',
+                value: "Dr.",
+            },
+            {
+                id: 'salutation_006',
+                value: "Prof.",
+            },
+        ],
         hobbies: [
             {
                 id: 'hobby_001',
@@ -94,6 +120,12 @@
             };
         },
     });
+
+    // const divTage = {
+    //     tage: "div",
+    //     attribute: 'class',
+    //     value: 'form-control',
+    // }
 
     const getBodyDiv = document.getElementById('formDiv');
 
@@ -213,7 +245,7 @@
 
     // getBodyDiv in side appendChild form
     getBodyDiv.appendChild(form);
-})
+}());
 
 
 

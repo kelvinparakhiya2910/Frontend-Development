@@ -5,21 +5,20 @@
         theme2: 'theme2',
         theme3: 'theme3'
     };
-    function theme1(actions) {
+    function setTheme(actions) {
         body.setAttribute('class', actions);
     };
     function actionsHandle(event) {
-        const id = event.target.dataset.id;
-        const action = event.target.dataset.action;
-        switch (action) {
+        const getThemeName = event.target.dataset.themename;
+        switch (getThemeName) {
             case Actions.theme1:
-                theme1(action);
+                setTheme(getThemeName);
                 break;
             case Actions.theme2:
-                theme1(action);
+                setTheme(getThemeName);
                 break;
             case Actions.theme3:
-                theme1(action);
+                setTheme(getThemeName);
                 break;
             default:
                 break;

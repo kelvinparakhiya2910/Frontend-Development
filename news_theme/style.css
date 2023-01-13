@@ -56,7 +56,6 @@ header h2 {
 
 .btn {
     display: inline-block;
-    background: none;
     border: 1px solid;
     border-radius: 50px;
     padding: 7px 16px;
@@ -65,16 +64,16 @@ header h2 {
     text-align: center;
     text-decoration: none;
     transition: all .2s ease;
-    margin-left: 2.6rem !important;
+    margin-left: 2.6rem;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: brown;
+    background-color: rgb(44, 92, 29);
+    color: azure;
 }
 
 main {
-    height: calc(100vh - 200px);
     background-color: var(--mainBackground);
     overflow: hidden;
 }

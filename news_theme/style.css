@@ -1,0 +1,101 @@
+.theme1 {
+    --headerBackground: antiquewhite;
+    --mainBackground: white;
+    --footerBackground: darkgrey;
+    --newsBoxBroder: darkgrey;
+    --newsTitleBorder: darkcyan;
+    --textColor: black;
+}
+
+.theme2 {
+    --headerBackground: lightblue;
+    --mainBackground: lightcyan;
+    --footerBackground: darkseagreen;
+    --newsBoxBroder: darkseagreen;
+    --newsTitleBorder: rgb(67, 184, 192);
+    --textColor: red;
+}
+
+.theme3 {
+    --headerBackground: rgb(194, 209, 107);
+    --mainBackground: rgb(81, 114, 175);
+    --footerBackground: rgb(176, 80, 214);
+    --newsBoxBroder: rgb(214, 84, 116);
+    --newsTitleBorder: rgb(36, 158, 111);
+    --textColor: rgb(130, 230, 91);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 80px;
+    background-color: var(--headerBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    align-items: center;
+}
+
+header h2 {
+    margin-right: 10rem;
+}
+
+
+.btn {
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+    margin-left: 2.6rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(44, 92, 29);
+    color: azure;
+}
+
+main {
+    background-color: var(--mainBackground);
+    overflow: hidden;
+}
+
+footer {
+    height: 120px;
+    background-color: var(--footerBackground);
+}
+
+
+article.newsBox {
+    margin: 16px;
+    padding: 1rem;
+    border: 1px solid var(--newsBoxBroder);
+}
+
+article.newsBox h3.newsTitle {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--newsTitleBorder);
+    color: var(--textColor);
+}
+
+article.newsBox div.newsShortDescription {
+    padding-top: 1rem;
+}
